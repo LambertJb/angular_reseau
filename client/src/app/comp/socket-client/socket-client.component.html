@@ -1,0 +1,9 @@
+<div class="container">
+    <div id="draggable" (click)="changeColor()" [ngStyle]="{ 'background-color': color}">
+        <p> {{ text }} </p>
+    </div>
+
+    <label> Changer le text :
+        <input #txt id="change-txt" (keyup.enter)="changeText(txt.value); txt.value='';"/>
+    </label>
+</div>
